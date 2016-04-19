@@ -124,7 +124,7 @@ if [ -n "$port" ]; then
 	port_arg="-p $port:6080"
 fi
 
-docker run \
+nvidia-docker run \
   -d \
   --name $container \
   ${mount_local} \
